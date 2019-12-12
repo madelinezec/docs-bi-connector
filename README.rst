@@ -1,4 +1,3 @@
-=========================================================
 MongoDB Connector for Business Intelligence Documentation
 =========================================================
 This repository contains documentation regarding components of the
