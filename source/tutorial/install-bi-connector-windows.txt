@@ -2,6 +2,7 @@
 
 .. _install-bic-windows:
 
+
 ===============================
 Install {+bi-short+} on Windows
 ===============================
