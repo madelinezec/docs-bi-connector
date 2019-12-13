@@ -5,7 +5,7 @@
 ===============================
 Install {+bi-short+} on Windows
 ===============================
-MADDIE WAS HERE AND HERE
+MADDIE WAS HERE AND HERE HERE
 .. default-domain:: mongodb
 
 .. contents:: On this page
