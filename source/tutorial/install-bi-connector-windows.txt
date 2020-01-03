@@ -7,13 +7,7 @@
 Install {+bi-short+} on Windows
 ===============================
 
-
-
-
-
-MADDIE WAS HERE AND HERE HERE
-
-MAD
+A MASTER BUILD PRODUCTION DEPLOY JOB
 .. default-domain:: mongodb
 
 .. contents:: On this page
