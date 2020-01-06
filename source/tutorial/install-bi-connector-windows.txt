@@ -2,13 +2,12 @@
 
 .. _install-bic-windows:
 
-
 ===============================
 Install {+bi-short+} on Windows
 ===============================
 
-A MASTER BUILD PRODUCTION DEPLOY JOB
-A MASTER BUILD PRODUCTION DEPLOY JOB
+test prod deploy job
+
 .. default-domain:: mongodb
 
 .. contents:: On this page
