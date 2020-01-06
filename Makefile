@@ -11,6 +11,12 @@ PROJECT=bi-connector
 STABLE_BRANCH=`grep 'manual' build/docs-tools/data/${PROJECT}-published-branches.yaml | cut -d ':' -f 2 | grep -Eo '[0-9a-z.]+'`
 
 .PHONY: help html publish stage deploy deploy-search-index
+MAKEFLAGS += --silent
+
+# This allows us to accept extra arguments (by doing nothing when we get a job that doesn't match, 
+# rather than throwing an error).
+%: 
+	@:
 
 help: ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
@@ -28,6 +34,14 @@ publish: ## Builds this branch's publishable HTML and other artifacts under buil
 stage: ## Host online for review
 	mut-publish build/${GIT_BRANCH}/html ${STAGING_BUCKET} --prefix=${PROJECT} --stage ${ARGS}
 	@echo "Hosted at ${STAGING_URL}/${PROJECT}/${USER}/${GIT_BRANCH}/index.html"
+
+
+# $(MAKECMDGOALS) is the list of "targets" spelled out on the command line
+stagel:
+	git clone https://github.com/madelinezec/test-submodules.git scripts
+	cd scripts && { npm list mongodb || npm install mongodb; } >/dev/null
+	source ~/.config/.snootyenv && node scripts/app.js $(filter-out $@,$(MAKECMDGOALS))
+	@rm -rf scripts
 
 deploy: build/public ## Deploy to the production bucket
 	mut-publish build/public ${PRODUCTION_BUCKET} --prefix=${PROJECT} --deploy --redirect-prefix='bi-connector' ${ARGS}
