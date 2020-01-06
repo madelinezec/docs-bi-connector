@@ -4,6 +4,7 @@
 MongoDB Connector for BI
 ========================
 produdeplo
+produdeplo
 .. default-domain:: mongodb
 
 About the |bi|
