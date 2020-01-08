@@ -3,28 +3,7 @@
 ========================
 MongoDB Connector for BI
 ========================
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-jooooooooo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
-produdeplo
+maddie
 .. default-domain:: mongodb
 
 About the |bi|
