@@ -3,7 +3,7 @@
 ========================
 MongoDB Connector for BI
 ========================
-maddie
+winmaddie
 maddie
 maddie
 maddie
