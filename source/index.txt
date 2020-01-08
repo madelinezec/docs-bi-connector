@@ -5,6 +5,7 @@ MongoDB Connector for BI
 ========================
 winmaddie
 winmaddie
+winmaddie
 maddie
 maddie
 maddie
