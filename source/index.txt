@@ -5,6 +5,7 @@ MongoDB Connector for BI
 ========================
 maddie
 maddie
+maddie
 .. default-domain:: mongodb
 
 About the |bi|
