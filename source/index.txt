@@ -3,21 +3,8 @@
 ========================
 MongoDB Connector for BI
 ========================
-p
-p
-p
-winmaddie
-winmaddie
-winmaddie
-winmaddie
-winmaddie
-maddie
-maddie
-maddie
-maddie
-maddie
-maddie
-maddie
+
+Maddie is testing
 .. default-domain:: mongodb
 
 About the |bi|
