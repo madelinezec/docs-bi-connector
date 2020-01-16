@@ -5,17 +5,8 @@ MongoDB Connector for BI
 ========================
 
 .. default-domain:: mongodb
-lfk;sk;dlfksl;dfk;sldkf;flkd;lkflfldldlddld
 
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
-MEMEMEMEMEMMEMEM
+Hiya!!!!!
 
 About MEEEEEEE
 --------------
