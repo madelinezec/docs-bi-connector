@@ -6,8 +6,7 @@ MongoDB Connector for BI
 
 .. default-domain:: mongodb
 
-This is the 1st commmit! 
-This is the second commit!
+Hallo 1!
 
 About MEEEEEEE
 --------------
