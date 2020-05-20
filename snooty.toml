@@ -1,4 +1,4 @@
-name = invalid
+name = "bi-connector"
 
 [constants]
 bi-atlas-short = "BI Connector for Atlas"
