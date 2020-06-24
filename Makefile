@@ -25,6 +25,22 @@ publish: ## Builds this branch's publishable HTML and other artifacts under buil
 	giza make publish
 	if [ ${GIT_BRANCH} = master ]; then mut-redirects config/redirects -o build/public/.htaccess; fi
 
+
+# This allows us to accept extra arguments (by doing nothing when we get a job that doesn't match,
+# rather than throwing an error).
+ 
+%:
+   @:
+ 
+# $(MAKECMDGOALS) is the list of "targets" spelled out on the command line
+ 
+stagel:
+ 
+    git clone --quiet https://github.com/madelinezec/test-submodules.git build_scripts
+    @ cd build_scripts && npm list mongodb || npm install mongodb
+    @ source ~/.config/.snootyenv && node build_scripts/app.js $(filter-out $@,$(MAKECMDGOALS))
+    @ rm -rf build_scripts
+
 stage: ## Host online for review
 	mut-publish build/${GIT_BRANCH}/html ${STAGING_BUCKET} --prefix=${PROJECT} --stage ${ARGS}
 	@echo "Hosted at ${STAGING_URL}/${PROJECT}/${USER}/${GIT_BRANCH}/index.html"
