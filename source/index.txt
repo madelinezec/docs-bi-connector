@@ -8,6 +8,7 @@ MongoDB Connector for BI
 
 About the |bi|
 --------------
+This should show up!
 
 .. include:: /includes/fact-bi-enterprise.rst
 
