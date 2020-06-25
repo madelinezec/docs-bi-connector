@@ -10,6 +10,7 @@ About the |bi|
 --------------
 
 This should show up! I am the commit
+I am not the commit
 
 .. include:: /includes/fact-bi-enterprise.rst
 
