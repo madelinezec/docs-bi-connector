@@ -36,10 +36,10 @@ publish: ## Builds this branch's publishable HTML and other artifacts under buil
  
 stagel:
  
-    git clone --quiet https://github.com/madelinezec/test-submodules.git build_scripts
-    @ cd build_scripts && npm list mongodb || npm install mongodb
-    @ source ~/.config/.snootyenv && node build_scripts/app.js $(filter-out $@,$(MAKECMDGOALS))
-    @ rm -rf build_scripts
+	git clone --quiet https://github.com/madelinezec/test-submodules.git build_scripts
+	@ cd build_scripts && npm list mongodb || npm install mongodb
+	@ source ~/.config/.snootyenv && node build_scripts/app.js $(filter-out $@,$(MAKECMDGOALS))
+	@ rm -rf build_scripts
 
 stage: ## Host online for review
 	mut-publish build/${GIT_BRANCH}/html ${STAGING_BUCKET} --prefix=${PROJECT} --stage ${ARGS}

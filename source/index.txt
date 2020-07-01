@@ -9,11 +9,16 @@ MongoDB Connector for BI
 About the |bi|
 --------------
 
-This should show up! I am the commit
-I am not the commit
-
 .. include:: /includes/fact-bi-enterprise.rst
 
+HIIIIIII
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
+The MongoDB Connector for Business Intelligence (BI) allows users to
 The MongoDB Connector for Business Intelligence (BI) allows users to
 create queries with SQL and visualize, graph, and report on their
 MongoDB Enterprise data using existing relational business intelligence
