@@ -5,7 +5,7 @@ PRODUCTION_URL="https://docs.mongodb.com"
 STAGING_BUCKET=docs-mongodb-org-staging
 PRODUCTION_BUCKET=docs-bi-connector-prod
 PROJECT=bi-connector
-
+export DIAGNOSTICS_FORMAT="JSON"
 # Parse our published-branches configuration file to get the name of
 # the current "stable" branch. This is weird and dumb, yes.
 STABLE_BRANCH=`grep 'manual' build/docs-tools/data/${PROJECT}-published-branches.yaml | cut -d ':' -f 2 | grep -Eo '[0-9a-z.]+'`
@@ -36,8 +36,8 @@ publish: ## Builds this branch's publishable HTML and other artifacts under buil
  
 stagel:
  
-	git clone --quiet https://github.com/madelinezec/test-submodules.git build_scripts
-	@ cd build_scripts && npm list mongodb || npm install mongodb
+	git clone --quiet https://github.com/mongodb/snooty-scripts.git build_scripts
+	@ cd build_scripts && git checkout DOP-1176 && npm install
 	@ source ~/.config/.snootyenv && node build_scripts/app.js $(filter-out $@,$(MAKECMDGOALS))
 	@ rm -rf build_scripts
 
