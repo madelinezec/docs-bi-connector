@@ -11,7 +11,7 @@ About the |bi|
 
 .. include:: /includes/fact-bi-enterprise.rst
 
-Test v2.12 on aug 11
+Test v2.12 on aug 25
 
 
 The MongoDB Connector for Business Intelligence (BI) allows users to
